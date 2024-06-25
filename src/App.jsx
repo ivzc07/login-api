@@ -73,7 +73,7 @@ function App() {
           <button
             className="text-black px-3 rounded bg-white disabled:bg-stone-400" 
           >
-            + Agregar
+            + Agregar +
           </button> 
         </form>
         
