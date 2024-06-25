@@ -10,7 +10,7 @@ function App() {
 
   const { register, handleSubmit, formState: { erros, isValid, isSubmitted}, reset, setFocus } = useForm();
 
-  function onSumbit(data) {
+  function submit(data) {
     
       dataValidation(data)
         .then((response) => {
@@ -42,7 +42,7 @@ function App() {
 
         <form 
           className='flex flex-col gap-4 items-center'
-          onSubmit={handleSubmit(onSumbit)}
+          onSubmit={handleSubmit(submit)}
         >
           <p className=''> Email </p>
           <input 
